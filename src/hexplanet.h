@@ -3,8 +3,8 @@
 
 #include <vector>
 
-#include <Imath/ImathVec.h>
-#include <Imath/ImathColor.h>
+#include <OpenEXR/ImathVec.h>
+#include <OpenEXR/ImathColor.h>
 
 #include <GL/gl.h>
 #ifdef WIN32

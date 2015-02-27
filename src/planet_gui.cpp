@@ -18,7 +18,7 @@
 #include <GL/glut.h>
 #include <GL/glui.h>
 
-#include <Imath/ImathVec.h>
+#include <OpenEXR/ImathVec.h>
 
 #include "load_texture.h"
 #include "gamefontgl.h"
