@@ -110,7 +110,7 @@ void PlanetGui::buildInterface()
 	GLUI_Spinner *spinner =
 		m_glui->add_spinner_to_panel( construct_pane, "Subdivision:", 
 				GLUI_SPINNER_INT,
-				&(m_subdLevel), ID_SUBDIVISION, NULL );
+				&(m_subdLevel), ID_SUBDIVISION );
 	spinner->set_int_limits( 0, kMaxSubdivisionLevel );
 
 	// Paint
@@ -132,13 +132,13 @@ void PlanetGui::buildInterface()
 	spinner =
 		m_glui->add_spinner_to_panel( construct_pane, "Randomness:", 
 				GLUI_SPINNER_FLOAT,
-				&(m_terrRandom), ID_TERRRAND, NULL );
+				&(m_terrRandom), ID_TERRRAND );
 	spinner->set_float_limits( 0.0f, 1.0f );
 
 	spinner =
 		m_glui->add_spinner_to_panel( construct_pane, "Water:", 
 				GLUI_SPINNER_FLOAT,
-				&(m_terrWatery), ID_TWATER, NULL );
+				&(m_terrWatery), ID_TWATER );
 	spinner->set_float_limits( 0.0f, 1.0f );
 
 		
