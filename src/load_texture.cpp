@@ -16,6 +16,8 @@
 
 //#include "debug.h"
 #include "load_texture.h"
+#include <cstring>
+#include <cstdlib>
 
 typedef unsigned __int8 Uint8;
 typedef unsigned __int16 Uint16;
