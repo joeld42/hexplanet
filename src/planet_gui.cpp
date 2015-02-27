@@ -16,7 +16,7 @@
 #include <GL/glu.h>
 
 #include <GL/glut.h>
-#include <glui.h>
+#include <GL/glui.h>
 
 #include <Imath/ImathVec.h>
 

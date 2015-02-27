@@ -17,7 +17,7 @@
 
 
 #include <GL/glut.h>
-#include <glui.h>
+#include <GL/glui.h>
 
 // Local includes
 #include "planet_gui.h"
