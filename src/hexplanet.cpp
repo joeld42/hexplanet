@@ -370,9 +370,9 @@ void HexPlanet::draw( int draw_mode )
 	if (!m_initStaticRes)
 	{
 		m_initStaticRes = true;
-		g_texTemplate = loadTextureDDS( "datafiles\\template.dds" );
-		g_texTileset = loadTextureDDS( "datafiles\\tileset.dds" );
-		g_texTilesetGrid = loadTextureDDS( "datafiles\\tileset_grid.dds" );
+		g_texTemplate = loadTextureDDS( "datafiles/template.dds" );
+		g_texTileset = loadTextureDDS( "datafiles/tileset.dds" );
+		g_texTilesetGrid = loadTextureDDS( "datafiles/tileset_grid.dds" );
 	}
 
 	//DBG: Draw axes
