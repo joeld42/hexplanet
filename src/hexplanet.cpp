@@ -625,6 +625,6 @@ bool HexPlanet::rayHitPlanet( Imath::V3f p, Imath::V3f dir, Imath::V3f &result )
 	c = p.dot(p) - (kPlanetRadius*kPlanetRadius);
 	d = b*b - 4.0f*a*c;
 	if (d <=0 ) return false;
-	result = p + ((-b - sqrt(d)) / 2.0f*a)*dir;
+	result = p + ((-b - sqrtf(d)) / 2.0f*a)*dir;
 	return true;
 }
