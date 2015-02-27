@@ -10,7 +10,9 @@
 // GL and related includes
 #include <GL/glew.h>
 #include <GL/gl.h>
+#ifdef WIN32
 #include <GL/glaux.h>
+#endif
 #include <GL/glu.h>
 
 
