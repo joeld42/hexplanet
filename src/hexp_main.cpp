@@ -162,6 +162,7 @@ int main( int argc, char *argv[])
 	glutInitWindowPosition( 0, 0 );
 	glutInitWindowSize( 800, 600 );
  
+	glutInit(&argc, argv);
 	g_glutMainWin = glutCreateWindow( "Hex Planet Demo" );
 
 	// Initialize glew
