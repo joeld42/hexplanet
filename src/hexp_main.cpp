@@ -10,12 +10,14 @@
 // GL and related includes
 #include <GL/glew.h>
 #include <GL/gl.h>
+#ifdef WIN32
 #include <GL/glaux.h>
+#endif
 #include <GL/glu.h>
 
 
 #include <GL/glut.h>
-#include <glui.h>
+#include <GL/glui.h>
 
 // Local includes
 #include "planet_gui.h"
@@ -160,6 +162,7 @@ int main( int argc, char *argv[])
 	glutInitWindowPosition( 0, 0 );
 	glutInitWindowSize( 800, 600 );
  
+	glutInit(&argc, argv);
 	g_glutMainWin = glutCreateWindow( "Hex Planet Demo" );
 
 	// Initialize glew

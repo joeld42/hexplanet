@@ -3,11 +3,13 @@
 
 #include <vector>
 
-#include <Imath/ImathVec.h>
-#include <Imath/ImathColor.h>
+#include <OpenEXR/ImathVec.h>
+#include <OpenEXR/ImathColor.h>
 
 #include <GL/gl.h>
+#ifdef WIN32
 #include <GL/glaux.h>
+#endif
 #include <GL/glu.h>
 
 struct HexTri;

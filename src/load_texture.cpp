@@ -1,4 +1,6 @@
+#ifdef WIN32
 #include <windows.h>
+#endif
 
 #include <assert.h>
 #include <stdio.h>
@@ -14,10 +16,19 @@
 
 //#include "debug.h"
 #include "load_texture.h"
+#include <cstring>
+#include <cstdlib>
 
+#ifdef WIN32
 typedef unsigned __int8 Uint8;
 typedef unsigned __int16 Uint16;
 typedef unsigned __int32 Uint32;
+#else
+#include <inttypes.h>
+typedef uint8_t Uint8;
+typedef uint16_t Uint16;
+typedef uint32_t Uint32;
+#endif
 
 // Most of the DDS code comes from from the NVidia Whitepaper
 // "Using Texture Compression in OpenGL" by Sebastien Domine

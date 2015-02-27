@@ -11,7 +11,9 @@
 
 // GL and related includes
 #include <GL/gl.h>
+#ifdef WIN32
 #include <GL/glaux.h>
+#endif
 #include <GL/glu.h>
 #include <GL/glut.h>
 
@@ -368,9 +370,9 @@ void HexPlanet::draw( int draw_mode )
 	if (!m_initStaticRes)
 	{
 		m_initStaticRes = true;
-		g_texTemplate = loadTextureDDS( "datafiles\\template.dds" );
-		g_texTileset = loadTextureDDS( "datafiles\\tileset.dds" );
-		g_texTilesetGrid = loadTextureDDS( "datafiles\\tileset_grid.dds" );
+		g_texTemplate = loadTextureDDS( "datafiles/template.dds" );
+		g_texTileset = loadTextureDDS( "datafiles/tileset.dds" );
+		g_texTilesetGrid = loadTextureDDS( "datafiles/tileset_grid.dds" );
 	}
 
 	//DBG: Draw axes
@@ -623,6 +625,6 @@ bool HexPlanet::rayHitPlanet( Imath::V3f p, Imath::V3f dir, Imath::V3f &result )
 	c = p.dot(p) - (kPlanetRadius*kPlanetRadius);
 	d = b*b - 4.0f*a*c;
 	if (d <=0 ) return false;
-	result = p + ((-b - sqrt(d)) / 2.0f*a)*dir;
+	result = p + ((-b - sqrtf(d)) / 2.0f*a)*dir;
 	return true;
 }
